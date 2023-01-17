@@ -1,0 +1,15 @@
+---
+test-cases:
+  - summary: |
+      Проверка товара по ключевому слову 
+    status: pass
+  - summary: |
+      Проверка поиска товара по категориям
+    status: pass
+  - summary: |
+      Успешное добавление товара в корзину 
+    status: pass
+  - summary: |
+      Фильтр товаров по брендам
+    status: pass
+bugreports: []
