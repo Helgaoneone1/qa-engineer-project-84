@@ -12,4 +12,14 @@ test-cases:
   - summary: |
       Фильтр товаров по брендам
     status: pass
+  - summary: |
+      Проверка фильтра по цене 
+    status: pass
+  - summary: |
+      Открытие карточки товара
+    status: pass
+    
 bugreports: []
+ 
+  
+    
