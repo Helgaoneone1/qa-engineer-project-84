@@ -5,7 +5,6 @@
     Google Chrome  MacOS High Sierra 10.13.6 
   steps-to-reproduce: >
     1 Зайти на страницу интернет магазина
-    https://hexlet-products-store.vercel.app/
 
     2 Нажать на строку "Поиск"
 
@@ -15,3 +14,43 @@
   actual-result: |
     На страницу не выводятся товары по ключевому слову
     Появляется сообщение "Ничего не найдено"
+
+- summary: |
+    Не отображается список товаров при выключенном чекбоксе 
+  environment: |
+    Google Chrome  MacOS High Sierra 10.13.6 
+  steps-to-reproduce: |
+    1. Зайти на страницу магазина 
+    
+    2. Найти "In Stock"
+    
+    3. Убрать чекбокс "In Stock"
+  expected-result: |
+    При включенном чекбоксе "In Stock" отображаются товары имеющиеся в наличии 
+    При выключенном чекбоксе "In Stock" отображаются все товары из магазина 
+  actual-result: |
+    Все товары магазина не отображаются 
+    
+- summary: |
+    Кнопка "Previous" отображается на первой странице списка  
+  environment: |
+    Google Chrome  MacOS High Sierra 10.13.6 
+  steps-to-reproduce: |
+    1. Зайти на первую страницу магазина 
+    
+  expected-result: |
+    На первой странице списка по логике отображается кнопка "Next"
+  actual-result: |
+    На первой странице списка кнопка "Previous" отображается не логично 
+    
+- summary: |
+    Нет мобильной версии сайта
+  environment: |
+    Safari iPhone 7 plus iOS 15.7
+  steps-to-reproduce: |
+    1. Зайти на сайт магазина 
+    
+  expected-result: |
+    Мобильная версия сайта успешно функционирует 
+  actual-result: |
+    Мобильная версия сайта не реализована 
