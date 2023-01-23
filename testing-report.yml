@@ -11,3 +11,10 @@
 - summary: |
     Успешное добавление товара в корзину 
   status: pass
+- summary: | 
+    Проверка фильтра по цене 
+  status: pass
+- summary: | 
+    Открытие карточки товара
+  status: pass
+  
