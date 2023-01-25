@@ -3,12 +3,10 @@
     Не работает поиск товара по ключевому слову 
   environment: |
     Google Chrome  MacOS High Sierra 10.13.6 
-  steps-to-reproduce: >
-    1 Зайти на страницу интернет магазина
+  steps-to-reproduce: |
+    1 Нажать на строку "Поиск"
 
-    2 Нажать на строку "Поиск"
-
-    3 Ввести ключевое слово "Apple"
+    2 Ввести ключевое слово "Apple"
   expected-result: |
     На странице интернет магазина появляются все товары категории "Apple"
   actual-result: |
@@ -16,15 +14,13 @@
     Появляется сообщение "Ничего не найдено"
 
 - summary: |
-    Не отображается список товаров при выключенном чекбоксе 
+    Не отображается список товаров при выключенном чекбоксе "In Stock"
   environment: |
     Google Chrome  MacOS High Sierra 10.13.6 
-  steps-to-reproduce: |
-    1. Зайти на страницу магазина 
+  steps-to-reproduce: | 
+    1 Найти "In Stock"
     
-    2. Найти "In Stock"
-    
-    3. Убрать чекбокс "In Stock"
+    2 Убрать чекбокс "In Stock"
   expected-result: |
     При включенном чекбоксе "In Stock" отображаются товары имеющиеся в наличии 
     При выключенном чекбоксе "In Stock" отображаются все товары из магазина 
@@ -36,7 +32,7 @@
   environment: |
     Google Chrome  MacOS High Sierra 10.13.6 
   steps-to-reproduce: |
-    1. Зайти на первую страницу магазина 
+    1 Открыта первая страница 
     
   expected-result: |
     На первой странице списка по логике отображается кнопка "Next"
@@ -48,7 +44,7 @@
   environment: |
     Safari iPhone 7 plus iOS 15.7
   steps-to-reproduce: |
-    1. Зайти на сайт магазина 
+    1 Загрузить на мобильном устройстве 
     
   expected-result: |
     Мобильная версия сайта успешно функционирует 
